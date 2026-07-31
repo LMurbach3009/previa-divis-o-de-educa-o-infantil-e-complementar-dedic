@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEDIC</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Cabinet Grotesk', 'sans-serif'] },
+                    colors: { brand: { yellow: '#fbbf24', green: '#10b981', text: '#374151' } }
+                }
+            }
+        }
+    </script>
+    <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500,400&display=swap" rel="stylesheet">
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-[#fefce8] text-brand-text font-sans antialiased">
+    <nav class="fixed top-0 w-full z-40 bg-white/90 backdrop-blur shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-extrabold text-brand-green tracking-tight">DEDIC.</div>
+            <div class="hidden md:flex gap-6 font-semibold">
+                <a href="#sobre" class="hover:text-brand-green">Nossa Creche</a>
+                <a href="#servicos" class="hover:text-brand-green">Atividades</a>
+                <a href="#contato" class="hover:text-brand-green">Matrículas</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-32 pb-20 px-6 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        <div class="flex-1">
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6 text-gray-900">Educação Infantil com afeto e desenvolvimento.</h1>
+            <p class="text-xl text-gray-600 mb-8">Na DEDIC, preparamos os primeiros passos do seu filho em um ambiente seguro, lúdico e estimulante.</p>
+            <a href="#contato" class="bg-brand-green text-white px-8 py-4 rounded-full font-bold shadow-lg hover:bg-emerald-600 transition">Agendar Visita</a>
+        </div>
+        <div class="flex-1">
+            <div class="w-full aspect-square bg-brand-yellow rounded-full overflow-hidden border-8 border-white shadow-xl relative">
+                <img src="https://picsum.photos/seed/kids/800/800" class="w-full h-full object-cover" alt="Crianças brincando">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 text-center max-w-3xl">
+            <h2 class="text-4xl font-extrabold mb-6">Sobre a DEDIC</h2>
+            <p class="text-lg text-gray-600 mb-6">[Texto a definir com o cliente detalhando a metodologia de ensino infantil, cuidado com a primeira infância e estrutura do berçário e maternal.]</p>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="py-20 px-6 bg-[#fefce8]">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-3xl shadow-sm border-2 border-brand-yellow">
+                <h3 class="text-2xl font-bold mb-4">Berçário</h3>
+                <p class="text-gray-600">[Detalhes a definir com o cliente sobre o cuidado com bebês e introdução alimentar].</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-sm border-2 border-brand-green">
+                <h3 class="text-2xl font-bold mb-4">Maternal</h3>
+                <p class="text-gray-600">[Detalhes a definir com o cliente sobre o desenvolvimento motor e social das crianças].</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-sm border-2 border-blue-400">
+                <h3 class="text-2xl font-bold mb-4">Atividades Extras</h3>
+                <p class="text-gray-600">[Detalhes a definir com o cliente sobre musicalização, artes e recreação dirigidas].</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="py-20 bg-brand-green text-white text-center px-6">
+        <h2 class="text-3xl font-extrabold mb-10">Famílias Felizes</h2>
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+            <div class="bg-emerald-600 p-6 rounded-2xl">
+                <p class="italic font-medium mb-4">"[Depoimento real de pais sobre o acolhimento e desenvolvimento da criança a definir com o cliente]"</p>
+                <p class="font-bold">- Mãe/Pai</p>
+            </div>
+            <div class="bg-emerald-600 p-6 rounded-2xl">
+                <p class="italic font-medium mb-4">"[Depoimento real de pais sobre a confiança e transparência da instituição a definir com o cliente]"</p>
+                <p class="font-bold">- Mãe/Pai</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-20 bg-white px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-4xl font-extrabold mb-6">Venha nos visitar</h2>
+                <div class="space-y-4 text-lg">
+                    <p><strong>Endereço:</strong> Campinas, SP</p>
+                    <p><strong>E-mail:</strong> contato@divis-o-de-educa-o-infantil-e-complementar-dedic.com.br</p>
+                    <p><strong>Horários:</strong> [Seg a Sex - Horários a definir com o cliente]</p>
+                </div>
+            </div>
+            <div class="bg-gray-100 h-64 rounded-3xl flex items-center justify-center shadow-inner">
+                <p class="text-gray-400 font-bold">[Mapa do Google]</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-sm text-gray-400 bg-white">
+        Prévia conceitual produzida por Lucas Murbach (19) 97131-8109. Não é um site oficial deste estabelecimento.
+    </footer>
+
+    <!-- Contact Bar -->
+    <div id="contact-bar" class="fixed bottom-0 left-0 w-full pt-20 pb-8 px-4 text-center bg-gradient-to-t from-[#B0B746]/90 to-transparent transform translate-y-full transition-transform duration-700 z-50 pointer-events-none">
+        <p class="text-zinc-900 font-semibold text-lg drop-shadow-sm pointer-events-auto">Para mais informações entre em contato: Lucas Murbach (19) 97131-8109</p>
+    </div>
+    <script>
+        window.addEventListener('scroll', () => {
+            const bar = document.getElementById('contact-bar');
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
+                bar.classList.remove('translate-y-full');
+            } else {
+                bar.classList.add('translate-y-full');
+            }
+        });
+        setTimeout(() => window.dispatchEvent(new Event('scroll')), 500);
+    </script>
+</body>
+</html>
